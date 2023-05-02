@@ -1,0 +1,25 @@
+<app-navigation></app-navigation>
+<main class="mt-5">
+  <table class="table table-stripped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Student Name</th>
+        <th scope="col">Course</th>
+        <th scope="col">Course Duration(in Months)</th>
+        <th scope="col">Training Mode</th>
+        <th scope="col">Location Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.studentName }}</td>
+        <td>{{ student.course }}</td>
+        <td>{{ student.courseDuration }}</td>
+        <td>{{ student.trainingMode }}</td>
+        <td>{{ student.locationInfo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
